@@ -13,6 +13,7 @@ body {
 .title {
     margin-top: 5rem;
 } 
-.nilBack {
-    
+.unselectable {
+    pointer-events: none; 
+    user-select: none;      
 }

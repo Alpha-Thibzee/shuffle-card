@@ -94,10 +94,11 @@ function drawCard(){
     p.innerHTML = "Nom de l'image : "+deck.cards[i].name;
     img.src = deck.cards[i].image;
     sectionCard.appendChild(divCard);
-    sectionCard.classList.add("d-flex", "justify-content-center", "align-items-center", "container", "row", "mx-auto");
-    divCard.classList.add("card", "mb-3", "col-2");
-    img.classList.add("card-img-top");
-    p.classList.add("text-center");
+    sectionCard.classList.add("d-flex", "justify-content-center", "align-items-center", "container", "row", "mx-auto", "unselectable");
+    divCard.classList.add("card", "mb-3", "col-2", "unselectable");
+    img.classList.add("card-img-top", "unselectable");
+    p.classList.add("text-center" , "unselectable");
+
     
     divCard.appendChild(img);
 
